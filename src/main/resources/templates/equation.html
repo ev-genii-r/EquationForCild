@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+  <body>
+    <div style="margin-left: 37%; margin-top: 50px">
+      <p>
+        <img src="img/apple.png" style="width:42px;height:42px;">
+        + <img src="img/apple.png" style="width:42px;height:42px;">
+        + <img src="img/apple.png" style="width:42px;height:42px;">
+        = <b th:text="${result1}" style="font-size: 40px"></b>
+      </p>
+      <p>
+        <img src="img/apple.png" style="width:42px;height:42px;">
+        + <img src="img/banana.png" style="width:42px;height:42px;">
+        + <img src="img/banana.png" style="width:42px;height:42px;">
+        = <b th:text="${result2}" style="font-size: 40px"></b>
+      </p>
+      <p> <img src="img/banana.png" style="width:42px;height:42px;">
+        + <img src="img/coconut.png" style="width:42px;height:42px;">
+        + <img src="img/coconut.png" style="width:42px;height:42px;">
+        = <b th:text="${result3}" style="font-size: 40px"></b>
+      </p>
+      <p> <img src="img/apple.png" style="width:42px;height:42px;">
+        + <img src="img/banana.png" style="width:42px;height:42px;">
+        + <img src="img/coconut.png" style="width:42px;height:42px;">
+        = <b style="font-size: 40px"> ? </b>
+      </p>
+      <form action="/equation" method="post">
+        <input type="text" name="usersAnswer">
+        <br>
+        <button type="submit" style="width: 203px; margin-top: 10px">
+          submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
